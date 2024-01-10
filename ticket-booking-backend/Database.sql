@@ -1,0 +1,45 @@
+-- CREATE DATABASE 'TicketBooking';
+-- USE 'TicketBooking';
+
+-- CREATE TABLE Users (
+--     id int NOT NULL AUTO_INCREMENT,
+--     name varchar(255) NOT NULL,
+--     email varchar(255) NOT NULL UNIQUE,
+--     password varchar(255) NOT NULL,
+--     userType varchar(255) NOT NULL,
+--     PRIMARY KEY (id) 
+-- );
+
+-- CREATE TABLE Movie (
+--     id int NOT NULL AUTO_INCREMENT,
+--     name varchar(255) NOT NULL,
+--     tickets int NOT NULL,
+--     showTime varchar(255) NOT NULL,
+--     date varchar(255) NOT NULL,
+--     ticketsSold int,
+--     price int NOT NULL,
+--     description varchar(255),
+--     PRIMARY KEY (id) 
+-- );
+
+-- CREATE TABLE Bookings (
+--     id int NOT NULL AUTO_INCREMENT,
+--     userName varchar(255) NOT NULL,
+--     movieName varchar(255) NOT NULL,
+--     totalTickets int NOT NULL,
+--     totalPrice int NOT NULL,
+--     showTime varchar(255) NOT NULL,
+--     date varchar(255) NOT NULL,
+--     status varchar(255),
+--     PRIMARY KEY (id) 
+-- );
+
+-- CREATE TABLE Payments (
+--     id int NOT NULL AUTO_INCREMENT,
+--     bookingId int NOT NULL ,
+--     amount float NOT NULL,
+--     method varchar(255) NOT NULL,
+--     status varchar(255),
+--     FOREIGN KEY (bookingId) REFERENCES Bookings(id),
+--     PRIMARY KEY (id) 
+-- );
